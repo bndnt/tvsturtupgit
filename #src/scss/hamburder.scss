@@ -1,0 +1,123 @@
+.mobile__menu{
+  display: none;
+  @media (max-width: 1200px) {
+    display: block;
+    position: absolute;
+    right: 13px;
+    left: auto;
+    top: 55px;
+    width: 42px;
+    height: 37px;
+    padding: 8px 6px;
+    background-color:  #094079;
+    @media (max-width: 650px){
+      top: 24px;
+      right: 11px;
+    }
+  }
+}
+.top {
+  transition: all 0.3s;
+
+  &__hamburger {
+    position: fixed;
+    left: 0;
+    top: 90px;
+    z-index: 1;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    height: 0!important;
+    width: 0;
+    transition: all 0.3s;
+    ul {
+      margin-bottom: 15px;
+    }
+
+    li {
+      padding: 15px 20px;
+    }
+
+    a {
+     opacity: 0;
+
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
+.top__hamburger.active{
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.mobile__menu_toggle.active {
+
+}
+#mobile_menu_toggle.active {
+  z-index: 5;
+  width: auto;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+}
+#mobile__menu-toggle {
+  position: relative;
+  width: 42px;
+  height: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__menu a span:nth-child(1) {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background: var(--darck-color);
+  transition: ease 300ms;
+  background-color: white;
+}
+
+.mobile__menu a.active span:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  transition: ease 300ms;
+  background-color: white;
+}
+
+.mobile__menu a span:nth-child(2) {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background: var(--darck-color);
+  margin: 7px 0;
+  background-color: white;
+}
+
+.mobile__menu a.active span:nth-child(2) {
+  opacity: 0;
+  background-color:white;
+}
+
+.mobile__menu a span:nth-child(3) {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background: var(--darck-color);
+  transition: ease 300ms;
+  background-color: white;
+}
+
+.mobile__menu a.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  transition: ease 300ms;
+  background-color: white;
+}

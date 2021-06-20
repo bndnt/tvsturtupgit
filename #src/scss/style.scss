@@ -1,0 +1,100 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff") format("woff"),
+    url("../fonts/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@import "reset.scss";
+@import "fonts";
+
+
+//<svg>
+//<use xlink:href="img/icons/icons.svg#alarm"></use>
+//</svg>
+:root{
+  --grayd3-color: #D3D3D3;
+  --grayac-color: #ACACAC;;
+  --graybe-color:  #BEBEBE;
+  --pink-color: #EC25A3;
+}
+
+$colorblack: #151515;
+$colorpinkeec25:#EC25A3;
+$colorlightdrayd3:#d3d3d3;
+$colorlightdrayac:#acacac;
+$widthxl: 1600px;
+$widthlg: 1200px;
+$widthmd:992px;
+$widthtable:760px;
+$widthsm:650px;
+$widthm:400px;
+*{
+  box-sizing: border-box;
+}
+html{
+
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container920{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.images{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.start{
+  background-image: url("../img/Bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo2{
+  display: none;
+}
+.black .logo2{
+  display: block;
+}
+.black .logo1{
+  display: none;
+}
+.black nav a{
+  color: #000000!important;
+}
+.black nav li.active a{
+  color: #ffffff!important;
+}
+.black nav li:hover a{
+  color: #ffffff!important;
+}
+.black .header__demo{
+  background-color: #ff9300;
+}
+
+@import "header";
+@import "main";
+@import "hamburder";
+@import "turnkey";
+@import "stream";
+@import "publish";
+@import "schedule";
+@import "broadcast";
+@import "form-main";
+@import "partners";
+@import "ready";
+@import "footer";
+@import "start-cable";
+@import "articles";

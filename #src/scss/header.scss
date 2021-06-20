@@ -1,0 +1,228 @@
+.header{
+    &__wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 35px 0 45px;
+      position: relative;
+      @media (max-width: 1750px) {
+        padding: 0 10px 0 15px;
+      }
+      @media (max-width: 1200px){
+        padding: 0 13px 0 11px;
+      }
+      @media (max-width: 650px){
+        padding:0 11px 0 13px;
+      }
+    }
+  &__logo{
+    width: 308px;
+    height: 92px;
+    margin-top: 25px;
+    margin-right:55px;
+    @media (max-width: 1750px){
+      width: 250px;
+      margin-right: 20px;
+    }
+    @media (max-width: 650px){
+      width: 172px;
+      height: 50px;
+      margin-top: 17px;
+    }
+  }
+  &__nav{
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: available;
+  }
+  &__nav li{
+    padding: 41px 14px 11px;
+    margin: 0 9px;
+    @media (max-width: 1750px){
+      padding: 41px 11px 11px;
+      margin: 0 5px;
+    }
+    @media (max-width: 1750px){
+
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    &:nth-child(2){
+      position: relative;
+      width: 197px;
+      padding-right: 57px;
+      @media (max-width: 1750px){
+        padding-right: 45px;
+      }
+      @media (max-width: 1500px){
+        padding-right: 45px;
+        width: 180px;
+      }
+      @media (max-width: 1400px){
+        padding-right: 30px;
+        width: 150px;
+      }
+      &:after{
+        display: block;
+        content: '';
+        width: 19px;
+        height: 10px;
+        background-image: url("../img/Arrow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 10px;
+        top: 57px;
+        @media (max-width: 1750px){
+          top: 52px;
+          right: 30px;
+          width: 15px;
+        }
+        @media (max-width: 1500px){
+          top: 55px;
+          right: 20px;
+        }
+        @media (max-width: 1400px){
+          top: 57px;
+          right: 10px;
+        }
+      }
+    }
+    &:hover{
+      background-color:#094079;
+      border-bottom: 11px solid #5c95d6;
+    }
+  }
+  &__nav a{
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    @media (max-width: 1750px){
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @media (max-width: 1400px){
+      font-size: 22px;
+      line-height: 38px;
+    }
+  }
+  &__nav li.active{
+    background-color:#094079;
+    border-bottom: 11px solid #5c95d6;
+    padding: 48px 14px 11px;
+    @media (max-width: 1750px){
+      padding: 45px 11px 11px;
+      margin: 0 5px;
+    }
+    @media (max-width: 1400px){
+      padding: 45px 9px 11px;
+      margin: 0 5px;
+    }
+  }
+  &__basket{
+    width: 54px;
+    height: 51px;
+    position: relative;
+    margin-top: 41px;
+    @media (max-width: 1200px){
+      margin-right: 78px;
+    }
+    @media (max-width: 650px){
+      margin-top: 34px;
+      width: 28.32px;
+      height: 27.19px;
+      margin-right: 67px;
+    }
+  }
+  &__basket svg{
+    width: 100%;
+    height: 100%;
+  }
+  &__basket-amount{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: #f00;
+    right: 0;
+    top: -22px;
+    left: auto;
+    border-radius: 50%;
+    font-weight: normal;
+    font-size: 16.69px;
+    line-height: 20.02px;
+    text-align: center;
+    color: #fff;
+    @media (max-width: 650px){
+      width: 12.04px;
+      height: 12.04px;
+      font-size: 8.73px;
+      line-height: 10.48px;
+      top: -10px;
+    }
+  }
+  &__login{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    margin-top: 45px;
+    margin-left: 11px;
+    @media (max-width: 1750px){
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @media (max-width: 1400px){
+      font-size: 22px;
+      line-height: 38px;
+    }
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__demo{
+    font-weight: normal;
+    margin-top: 33px;
+    margin-left: 19px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #010101;
+    width: 248px;
+    height: 64px;
+    border-radius: 27px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+    @media (max-width: 1750px){
+      margin-left: 19px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @media (max-width: 1400px){
+      font-size: 22px;
+      line-height: 38px;
+    }
+  }
+}
