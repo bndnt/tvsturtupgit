@@ -1,0 +1,54 @@
+.form-main{
+  display: none;
+  @media (max-width: 650px) {
+    display: block;
+    border-radius: 3.47px;
+    background: #094079;
+  }
+  &__wrapper{
+    padding: 71px 0 81px;
+  }
+  .main__form-title{
+    font-size: 31.92px;
+    line-height: 38.31px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .main__form-subtitle{
+    font-size: 21.28px;
+    line-height: 25.54px;
+    text-align: center;
+    margin-bottom: 17px;
+    padding-left: 0;
+  }
+  .main__inputs-block {
+    margin: 0 15px 21px;
+    padding: 2px 9px;
+    width: auto;
+
+  }
+  .form-main input{
+    border-radius: 1.73px;
+  }
+  .main__form-icons {
+    width: 24px;
+    height: 36px;
+  }
+  .main__form-download {
+    border-radius: 17.41px;
+    background: #ff9300;
+    font-size: 21.28px;
+    line-height: 25.54px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 10px;
+    margin: 0 15px 0;
+    display: block;
+    width: auto;
+  }
+  &__block{
+    margin-bottom: 24px!important;
+  }
+}

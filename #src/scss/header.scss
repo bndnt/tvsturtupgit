@@ -5,13 +5,7 @@
       padding: 0 35px 0 45px;
       position: relative;
       @media (max-width: 1750px) {
-        padding: 0 10px 0 15px;
-      }
-      @media (max-width: 1200px){
-        padding: 0 13px 0 11px;
-      }
-      @media (max-width: 650px){
-        padding:0 11px 0 13px;
+        padding: 0 20px;
       }
     }
   &__logo{
@@ -179,7 +173,7 @@
     line-height: 36px;
     text-align: center;
     color: #fff;
-    margin-top: 45px;
+    margin-top: 48px;
     margin-left: 11px;
     @media (max-width: 1750px){
       font-size: 25px;

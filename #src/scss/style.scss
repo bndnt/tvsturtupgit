@@ -52,6 +52,12 @@ body {
   max-width: 1920px;
   margin: 0 auto;
 }
+.container-fullhd {
+  width: 100%;
+  max-width: 1710px;
+  padding:0 15px;
+  margin: 0 auto;
+}
 .images{
   width: 100%;
   height: 100%;
@@ -82,19 +88,37 @@ body {
 }
 .black .header__demo{
   background-color: #ff9300;
+  color: #fff;
+}
+.black .header__login {
+  color: #000;
 }
 
 @import "header";
-@import "main";
+
+//home
+@import "home/main";
 @import "hamburder";
-@import "turnkey";
-@import "stream";
-@import "publish";
-@import "schedule";
-@import "broadcast";
-@import "form-main";
-@import "partners";
-@import "ready";
+@import "home/turnkey";
+@import "home/stream";
+@import "home/publish";
+@import "home/schedule";
+@import "home/broadcast";
+@import "home/form-main";
+@import "home/partners";
+@import "home/ready";
 @import "footer";
-@import "start-cable";
-@import "articles";
+
+//blog
+@import "blog/start-cable";
+@import "blog/articles";
+
+//contact
+@import "contact-us/contact-us";
+
+
+//examples
+@import "examples/example-page";
+
+//freebook
+@import "freebook/freebook";

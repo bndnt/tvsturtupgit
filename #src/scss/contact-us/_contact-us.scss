@@ -1,0 +1,287 @@
+.contact-block {
+  padding-top: 85px;
+  padding-bottom: 120px;
+  @media all and (max-width: 650px) {
+    padding:30px 0;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    @media all and (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 580px;
+    @media all and (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+  &__title {
+    font-size: 47px;
+    font-weight: 500;
+    padding-bottom: 38px;
+    margin-bottom: 38px;
+    width: 100%;
+    border-bottom: 1px solid #ff9300;
+    @media all and (max-width: 1400px) {
+      font-size: 36px;
+    }
+    @media all and (max-width: 650px) {
+      font-weight:500;
+      font-size: 43.23px;
+      line-height: 51.87px;
+      text-align: center;
+      color: #000;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+    }
+  }
+  &__text {
+    font-size: 25px;
+    font-weight: 300;
+    p {
+      margin-bottom: 35px;
+      padding-right: 76px;
+    }
+    @media all and (max-width: 1400px) {
+      font-size: 22px;
+    }
+    @media all and (max-width: 650px) {
+      font-size: 18.01px;
+      line-height: 21.61px;
+      font-weight: 600;
+      p {
+        margin-bottom: 25px;
+        padding-right: 0;
+      }
+    }
+  }
+  &__btn-demo {
+    transition: all .4s;
+    border-radius: 50px;
+    background: #094079;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 96px;
+    margin-bottom: 20px;
+    @media all and (max-width: 1400px) {
+      font-size: 20px;
+      height: 70px;
+    }
+    @media all and (max-width: 650px) {
+      border-radius: 5px;
+      height: 58px;
+      font-size:  18px;
+      margin-bottom: 11px;
+    }
+  }
+  &__btn-email {
+    border: 5px solid #094079;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+    @media all and (max-width: 1400px) {
+      font-size: 20px;
+    }
+    @media all and (max-width: 650px) {
+      height: 41px;
+      border-width: 2px;
+      font-size: 14px;
+      margin-bottom: 11px;
+    }
+  }
+  &__btn-call {
+    margin-bottom: 20px;
+    transition: all .4s;
+    border-radius: 10px;
+    background: #ff9300;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    @media all and (max-width: 1400px) {
+      font-size: 20px;
+    }
+    @media all and (max-width: 650px) {
+      height: 41px;
+      margin-bottom: 11px;
+      font-size: 14px;
+    }
+  }
+  &__btn-call-border {
+    border: 5px solid #ff9300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    @media all and (max-width: 1400px) {
+      font-size: 20px;
+    }
+    @media all and (max-width: 650px) {
+      height: 41px;
+      border-width: 2px;
+      font-size: 14px;
+      margin-bottom: 11px;
+    }
+  }
+}
+
+
+.contact-block-form {
+  width: 100%;
+  max-width: 1020px;
+  margin-left: 74px;
+  box-sizing: border-box;
+  padding:28px 37px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #8d8d8d;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  @media all and (max-width: 991px) {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  @media all and (max-width: 650px) {
+    margin-top: 68px;
+    padding: 5px 14px 0 14px;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 44px;
+    @media all and (max-width: 650px) {
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      font-size: 24.68px;
+      line-height: 29.61px;
+      margin-bottom: 10px;
+    }
+  }
+  label {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #8d8d8d;
+    position: relative;
+    padding:13px 16px;
+    padding-left: 50px;
+    @media all and (max-width: 650px) {
+      padding: 6px 20px;
+      margin-bottom: 20px;
+      border-radius: 3.5px;
+    }
+    &.textarea {
+      svg {
+        top: 25px;
+        top: 25px;
+
+      }
+    }
+    &.file {
+      position: relative;
+      padding:13px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media all and (max-width: 650px) {
+        padding: 6px 20px;
+        margin-bottom: 20px;
+      }
+      input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+      span {
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: #000;
+        @media all and (max-width: 650px) {
+          font-size: 17px;
+        }
+      }
+    }
+    input {
+      font-size: 20px;
+    }
+    textarea {
+      font-size: 20px;
+      min-height: 180px;
+      @media all and (max-width: 650px) {
+        min-height: 100px;
+      }
+    }
+    svg {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (max-width: 650px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  button {
+    position: relative;
+    width: calc(100% + 76px);
+    left:-38px;
+    height: 70px;
+    border-radius: 0px 0px 10px 10px;
+    background: #ff9300;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    @media all and (max-width: 650px) {
+      width: calc(100% + 30px);
+      left: -15px;
+      font-size: 25px;
+      height: 43px;
+    }
+  }
+}
