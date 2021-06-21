@@ -8,46 +8,56 @@
 </head>
 <body>
 @@include('_hamburger.html')
-@@include('_header.html', {
-"color": "black",
-"logo":"img/logogo2.png"
-})
-<div class="freebook">
-    <div class="container-fullhd">
-        <div class="freebook__wrapper">
-            <div class="freebook__book">
-                <img src="img/book.png" alt="">
-            </div>
-            <div class="freebook__right">
-                <form action="" class="freebook__form freebook-form">
-                    <div class="freebook-form__title">
-                        Get Our Free Ebook
+<div class="freebook-block">
+    @@include('_header.html')
+    <div class="freebook">
+        <div class="container-fullhd">
+            <div class="freebook__wrapper">
+                <div class="freebook__book">
+                    <img src="img/book.png" alt="">
+                </div>
+                <div class="freebook__right">
+                    <form action="" class="freebook__form freebook-form">
+                        <div class="freebook-form__title">
+                            Get Our Free Ebook
+                        </div>
+                        <div class="freebook-form__subtitle">
+                            How To Start Your Own Internet,
+                            Cable or Satellite TV Network
+                        </div>
+                        <label for="">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#icon-man"></use>
+                            </svg>
+                            <input type="text" class="contact-block-form__input">
+                        </label>
+                        <label for="">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#email_icon"></use>
+                            </svg>
+                            <input type="text" class="contact-block-form__input">
+                        </label>
+                        <button>
+                            Download now
+                        </button>
+                    </form>
+                    <div class="freebook__right-text">
+                        <strong>START A NETWORK ON THE MOST POPLUAR VIDEO PLATFORMS</strong>
+                        <ul>
+                            <li>Less than 30 Minute read - Understand Internet TV lingo and terminology</li>
+                            <li>Most cost effective way to setup your Internet TV channel</li>
+                            <li>Best techniques to monitize your Internet TV Network</li>
+                            <li>Create your own Subscription TV apps similar to Netflix</li>
+                            <li>Learn what you need to know to get Started in Less than 30 days</li>
+                        </ul>
                     </div>
-                    <div class="freebook-form__subtitle">
-                        How To Start Your Own Internet,
-                        Cable or Satellite TV Network
-                    </div>
-                    <label for="">
-                        <svg>
-                            <use xlink:href="img/icons/icons.svg#icon-man"></use>
-                        </svg>
-                        <input type="text" class="contact-block-form__input">
-                    </label>
-                    <label for="">
-                        <svg>
-                            <use xlink:href="img/icons/icons.svg#email_icon"></use>
-                        </svg>
-                        <input type="text" class="contact-block-form__input">
-                    </label>
-                    <button>
-                        Download now
-                    </button>
-                </form>
 
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 @@include('_footer.html')
 
